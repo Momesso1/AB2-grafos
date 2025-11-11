@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from shapely.geometry import Point, Polygon, LineString
 
 
-# -------------------- PARTE 1: LEITURA DO MAPA --------------------
 def parse_map_file(filename):
     with open(filename, "r") as f:
         lines = [l.strip() for l in f.readlines() if l.strip()]
@@ -24,7 +23,6 @@ def parse_map_file(filename):
     return q_start, q_goal, polygons
 
 
-# -------------------- PARTE 2: GRAFO DE VISIBILIDADE --------------------
 def visible(p1, p2, obstacles):
     line = LineString([p1, p2])
     for obs in obstacles:
@@ -43,7 +41,6 @@ def build_visibility_graph(vertices, obstacles):
     return edges
 
 
-# -------------------- PARTE 3: ALGORITMO DE KRUSKAL --------------------
 def kruskal_mst(n, edges):
     parent = list(range(n))
 
@@ -62,12 +59,9 @@ def kruskal_mst(n, edges):
     return mst
 
 
-# -------------------- PARTE 4: VÉRTICE MAIS PRÓXIMO --------------------
 def vertice_mais_proximo(vertices, p):
     return min(range(len(vertices)), key=lambda i: math.dist(vertices[i], p))
 
-
-# -------------------- PARTE 5: BUSCA NA ÁRVORE --------------------
 def find_path_in_tree(adj, src, dst):
     from collections import deque
     q = deque([(src, [src])])
@@ -83,7 +77,6 @@ def find_path_in_tree(adj, src, dst):
     return []
 
 
-# -------------------- PARTE 6: PLOTAGEM --------------------
 def plot_solution(vertices, obstacles, mst, path, q_start, q_goal):
     fig, ax = plt.subplots(figsize=(8, 8))
     for obs in obstacles:
@@ -119,7 +112,6 @@ def plot_solution(vertices, obstacles, mst, path, q_start, q_goal):
     plt.show()
 
 
-# -------------------- MAIN --------------------
 def main(filename):
     q_start, q_goal, polygons = parse_map_file(filename)
     vertices = [q_start, q_goal]
