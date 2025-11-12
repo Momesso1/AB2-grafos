@@ -20,8 +20,6 @@ O grafo resultante é utilizado para gerar uma *árvore de custo mínimo* (usand
 
 ## ⚙️ Instalação
 
-Clone este repositório e instale as dependências:
-
 ```bash
 git clone https://github.com/LucasMomesso/AB2-grafos.git
 cd AB2-grafos
