@@ -18,18 +18,6 @@ O grafo resultante é utilizado para gerar uma *árvore de custo mínimo* (usand
 
 ---
 
-## ✅ Requisitos do Projeto
-
-- [x] 1️⃣ Leitura do mapa (`.txt`) e imagem (`.png`)  
-- [x] 2️⃣ Geração do grafo de visibilidade  
-- [x] 3️⃣ Implementação do algoritmo de **Prim**  
-- [x] 4️⃣ Função `verticeMaisProximo()`  
-- [x] 5️⃣ Algoritmo de busca em árvore (BFS ou DFS)  
-- [x] 6️⃣ Plotagem do caminho no mapa (`matplotlib`)  
-- [x] 7️⃣ README completo com instruções e prints  
-
----
-
 ## ⚙️ Instalação
 
 Clone este repositório e instale as dependências:
