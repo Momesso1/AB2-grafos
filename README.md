@@ -37,4 +37,4 @@ Clone este repositório e instale as dependências:
 ```bash
 git clone https://github.com/LucasMomesso/AB2-grafos.git
 cd AB2-grafos
-pip install -r requirements.txt
+python pratica2_grafos.py mapa_exemplo.txt
