@@ -14,7 +14,7 @@ A prática consiste em representar um ambiente 2D como um *grafo de visibilidade
 
 Há uma aresta entre dois vértices se houver *visada direta* entre eles, isto é, uma linha reta entre os dois pontos *sem cruzar obstáculos*.
 
-O grafo resultante é utilizado para gerar uma *árvore de custo mínimo* (usando Kruskal ou Prim), e a partir dela, encontrar o *melhor caminho* entre dois vértices (por exemplo, q_start → q_goal).
+O grafo resultante é utilizado para gerar uma *árvore de custo mínimo* (usando Kruskal), e a partir dela, encontrar o *melhor caminho* entre dois vértices (por exemplo, q_start → q_goal).
 
 ---
 
